@@ -1,170 +1,104 @@
+<!-- Updated Tenjiku Portal: Includes links to all new features -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imaginary Nation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenjiku | National Portal</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #1b1f26;
+      background-color: #111;
       color: white;
-    }
-    header {
-      background-color: #0c1f3f;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-size: 1.5rem;
+      padding: 0;
+    }
+    nav {
+      background-color: #222;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
     }
     nav a {
-      color: white;
-      margin-left: 1.5rem;
+      color: #ffcc00;
       text-decoration: none;
+      font-weight: bold;
     }
     .hero {
-      text-align: center;
       padding: 4rem 2rem;
-      background-color: #242c37;
+      text-align: center;
+      background-image: url('image.png');
+      background-size: cover;
+      background-position: center;
     }
-    .hero h2 {
+    .hero h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
     }
-    .hero p {
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-    .hero button {
-      background-color: #ffcc00;
-      color: black;
-      padding: 0.7rem 1.5rem;
-      margin: 0 0.5rem;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .section {
+    .feature-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem 1rem;
-      background-color: #111;
+      gap: 2rem;
+      padding: 2rem;
     }
     .card {
-      flex: 1 1 200px;
-      max-width: 250px;
       background-color: #1c1c1c;
-      margin: 1rem;
       padding: 1rem;
+      width: 200px;
       border-radius: 8px;
       text-align: center;
     }
     .card img {
-      width: 80px;
-      height: 80px;
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
       margin-bottom: 0.5rem;
     }
-    .card h3 {
+    .card h2 {
+      font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
-    .card button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #003366;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .news {
-      background-color: #2e2e2e;
-      padding: 2rem 1rem;
-    }
-    .news h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .news-box {
-      background-color: #1a1a1a;
-      border-left: 4px solid #ffcc00;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-    .news-box a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #001f3f;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffcc00;
+    .card a {
+      color: #00ffff;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Imaginary Nation</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">News</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Tenjikucitizenship.html">Citizenship</a>
+    <a href="passport.html">Passport</a>
+    <a href="nationalid.html">ID Card</a>
+    <a href="vote.html">Vote</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="assistant.html">Ask Tenjiku</a>
+  </nav>
 
   <section class="hero">
-    <h2>Serving the People with Honor and Transparency</h2>
-    <p>Welcome to our official portal for citizens and visitors alike.</p>
-    <button>View Services</button>
-    <button>Latest News</button>
+    <h1>Welcome to the Expanded Portal of Tenjiku</h1>
+    <p>Explore our fully digital citizen services below:</p>
   </section>
 
-  <section class="section">
+  <div class="feature-list">
     <div class="card">
-      <img src="https://via.placeholder.com/80?text=Citizenship" alt="Citizenship Icon" />
-      <h3><a href="Tenjikucitizenship.html"
-        style="color:white;text-decoration:none;">Citizenship</a></h3>
-      <p>Guidelines, application forms, FAQs, and status tracking to become a citizen.</p>
-      <button><a href="Tenjikucitizenship.html" style="color:white;text-decoration:none;">Learn More</a></button>
- style="color:white;text-decoration:none;">Learn More</a></button>
+      <img src="WhatsApp Image 2025-04-11 at 17.18.41_49073c8c.jpg" alt="Citizenship Icon">
+      <h2>Citizenship</h2>
+      <a href="Tenjikucitizenship.html">Apply Now</a>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/80?text=Business" alt="Business Support Icon" />
-      <h3><a href="https://example.com/business-support" style="color:white;text-decoration:none;">Business Support</a></h3>
-      <p>Resources and assistance for launching and growing your enterprise.</p>
-      <button><a href="https://example.com/business-support" style="color:white;text-decoration:none;">Learn More</a></button>
+      <img src="WhatsApp Image 2025-04-11 at 17.23.19_4a240a81.jpg" alt="Business Support Icon">
+      <h2>Business Support</h2>
+      <a href="#">Learn More</a>
     </div>
-  </section>
-
-  <section class="news">
-    <h2>Latest News & Announcements</h2>
-    <div class="news-box">
-      <strong><a href="https://example.com/gst" target="_blank">New Tax Policy Enacted</a></strong>
-      <p>The government has rolled out new tax reforms aimed at simplifying the process and reducing compliance burdens. <a href="https://example.com/gst" target="_blank">Read More...</a></p>
-    </div>
-    <div class="news-box">
-      <strong><a href="https://example.com/citizenship" target="_blank">Citizenship Application Deadline</a></strong>
-      <p>Fast-track your citizenship process by applying before the upcoming deadline. <a href="https://example.com/citizenship" target="_blank">Check Eligibility</a></p>
-    </div>
-    <div class="news-box">
-      <strong><a href="https://example.com/inflation" target="_blank">Business Grants Available</a></strong>
-      <p>New grants and incentives for small businesses and startups are now open. <a href="https://example.com/inflation" target="_blank">Apply Here</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Imaginary Nation. All rights reserved. <a href="#">Contact Us</a></p>
-  </footer>
+  </div>
 </body>
 </html>
