@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Citizenship</title>
+  <style>
+    body {
+      background-color: #1b1f26;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.7rem 2rem;
+      background-color: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .benefits {
+      margin-top: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .submitted {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Citizenship Application Portal</h1>
+  <h2>Apply for Citizenship</h2>
+
+  <form id="citizenshipForm">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="job">Occupation:</label>
+    <input type="text" id="job" name="job">
+
+    <label for="members">Household Members:</label>
+    <input type="number" id="members" name="members" min="1">
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <div class="submitted" id="submittedMessage">
+    <p>✅ Your application has been submitted successfully.<br> It will be reviewed shortly by the authorities.</p>
+  </div>
+
+  <div class="benefits">
+    <h2>Citizen Benefits</h2>
+    <ul>
+      <li>Access to free healthcare and education</li>
+      <li>Monthly food and utility subsidies</li>
+      <li>Priority in government job applications</li>
+      <li>Support for small business and entrepreneurship</li>
+      <li>Discounts on public transportation and fuel</li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('citizenshipForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('citizenshipForm').style.display = 'none';
+      document.getElementById('submittedMessage').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
